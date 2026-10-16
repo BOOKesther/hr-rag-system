@@ -1,0 +1,20 @@
+[project]
+name = "hr-knowledge-demo"
+version = "0.1.0"
+description = "Local recruitment archive and evidence-based RAG demo"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "gradio>=6,<7",
+  "python-multipart>=0.0.18", "pydantic-settings>=2.6,<3",
+  "pymupdf>=1.25,<2", "python-docx>=1.1,<2", "python-pptx>=1.0,<2",
+  "pillow>=11,<13", "lxml>=5,<7", "jieba>=0.42.1",
+  "sqlite-vec>=0.1.6,<0.2", "llama-index-core>=0.12,<0.15",
+  "httpx>=0.28,<1"
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,11 @@
+.venv/
+.uv-cache/
+.uv-python/
+.test-tmp*/
+output/
+.env
+data/
+__pycache__/
+.pytest_cache/
+*.pyc
+.gradio/
